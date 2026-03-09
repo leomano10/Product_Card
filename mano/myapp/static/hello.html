@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Product Card</title>
+
+<style>
+
+body{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    margin:0;
+    padding:20px;
+    background-color:#fa0bfa;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.product-card{
+    width:300px;
+    background:white;
+    border-radius:12px;
+    box-shadow:0 4px 8px rgba(0,0,0,0.2);
+    text-align:center;
+    padding:20px;
+    overflow:hidden;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover{
+    transform: translateY(-10px);
+    box-shadow:0 12px 20px rgba(0,0,0,0.3);
+}
+
+.product-image{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    border-radius:8px;
+
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-image{
+    transform: scale(1.05);
+}
+
+.product-name{
+    font-size:22px;
+    margin:15px 0 10px;
+}
+
+.product-description{
+    font-size:15px;
+    color:#1033b2;
+    margin-bottom:10px;
+}
+
+.product-price{
+    font-size:20px;
+    font-weight:bold;
+    margin:10px 0;
+}
+
+.add-to-cart{
+    background:#6faf4c;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    font-size:16px;
+    border-radius:6px;
+    cursor:pointer;
+
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover{
+    background:black;
+}
+
+footer{
+    background:#0bcefa;
+    color:black;
+    text-align:center;
+    padding:10px;
+    width:100%;
+    position:fixed;
+    bottom:0;
+    left:0;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="product-card">
+
+<h2 class="product-name">2015 Retro Barca Jersey</h2>
+
+<img src="messi jersey.jpg" alt="Barcelona Jersey" class="product-image">
+
+<p class="product-description">
+Premium quality FC Barcelona jersey inspired by the 2015 season.
+Comfortable fabric with authentic club design.
+</p>
+
+<p class="product-price">$50</p>
+
+<button class="add-to-cart">Add to Cart</button>
+
+</div>
+
+<footer>
+<p>Learner Name: manorajapriyan.l.e</p>
+<p>Register Number: 25018415</p>
+</footer>
+
+</body>
+</html>
